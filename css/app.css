@@ -1,0 +1,307 @@
+body {
+    zoom: 100%;
+    background: #dcdcdc;
+    font-family: 'Quicksand';
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 15px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    border-radius: 15px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.title-main {
+    text-align: center;
+    font-size: 40px;
+}
+
+.title-portion {
+    text-align: center;
+    margin: auto;
+    font-size: 40px;
+    color: #555555;
+    margin-bottom: 5px;
+    /*position: absolute;*/
+    /*top: 10%;*/
+    /*left: 35%;*/
+    /*z-index: -1;*/
+}
+
+.input {
+    background: #ffffff;
+    height: 90%;
+    width: 90%;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+.split {
+    top: 10px;
+    position: fixed;
+    overflow-x: hidden;
+}
+
+.split-mid {
+    bottom: 0;
+    width: 35%;
+    left: 34%;
+    margin-left: 20px;
+}
+
+.split-right {
+    bottom: 0;
+    width: 31%;
+    right: 0;
+}
+
+.split-left {
+    text-align: center;
+    margin-left: 2%;
+    width: 33%;
+    left: 0;
+}
+
+.admin {
+    position: fixed;
+    height: auto;
+    left: 2%;
+    bottom: 2%;
+}
+
+.admin-info {
+    background: #ffffff;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+#admin-avatar {
+    width: 50px;
+    box-shadow: 7px 6px 28px 1px rgba(0, 0, 0, 0.24);
+    cursor: pointer;
+    outline: none;
+    transition: 0.2s all;
+}
+
+#admin-avatar:hover {
+    width: 40px;
+}
+
+.footer {
+    font-style: italic;
+    font-size: 20px;
+    color: crimson;
+    padding-top: 20px;
+    padding-bottom: 8px;
+}
+
+.user-avatar {
+    border-radius: 25px;
+    width: 40px;
+}
+
+.user-name {
+    font-weight: bold;
+    font-size: 17px;
+    white-space: nowrap;
+    max-height: 22px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 225px;
+}
+
+.unread-notification {
+    height: 40px;
+    border-radius: 25px;
+    display: block;
+    padding-top: 10px;
+}
+
+.user {
+    background: #ffffff;
+    border-color: #000000;
+    margin-left: 10%;
+    width: 80%;
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 7px;
+    height: auto;
+}
+
+.content-announce {
+    font-size: 17px;
+    padding-top: 5px;
+}
+
+.story-preview {
+    height: 80px;
+    max-width: 60px;
+    display: block;
+}
+
+.row {
+    display: table;
+    width: 100%;
+}
+
+.column {
+    float: left;
+}
+
+.column-left {
+    width: auto;
+}
+
+.column-middle-user {
+    padding-left: 10px;
+    width: 45%;
+}
+
+.column-right {
+    float: right;
+}
+
+.column-right-notif {
+    position: absolute;
+    width: 30%;
+}
+
+.column-middle-notif {
+    padding-left: 10px;
+    width: 70%;
+}
+
+.button {
+    text-decoration: none;
+    border: none;
+    font-size: 16px;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 7px 6px 28px 1px rgba(0, 0, 0, 0.24);
+    cursor: pointer;
+    outline: none;
+    transition: 0.2s all;
+}
+
+.button-save-id {
+    padding: 12px 40px;
+    background: darkturquoise;
+}
+
+.button-remove-user {
+    padding: 12px 25px;
+    background: #dc143c;
+}
+
+#button-open-friend-list {
+    padding: 12px 70px;
+    background: dodgerblue;
+    font-weight: lighter;
+}
+
+#button-remove-all-notifications {
+    padding: 10px 20px;
+    background: #14b4dc;
+    /*margin-left: 10%;*/
+}
+
+.button-remove-user:active, #button-save-id:active, #button-open-friend-list:active, #admin-avatar:active, #button-remove-all-notifications:active {
+    transform: scale(0.98);
+    /* Scaling button to 0.98 to its original size */
+    box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+    /* Lowering the shadow */
+}
+
+#notifications {
+    /*margin-left: 10%;*/
+}
+
+.sub-notification, .sub-notification-new {
+    width: 93%;
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 7px;
+    height: auto;
+    display: block;
+    color: #000000;
+}
+
+.sub-notification-new {
+    background: #adc4e6;
+}
+
+.sub-notification {
+    background: #ffffff;
+}
+
+.sub-notification:hover, .sub-notification-new:hover {
+    background: #d3d3d3;
+}
+
+.sub-notification:active, .sub-notification-new:active {
+    color: #000000;
+}
+
+.sub-notification:link, .sub-notification-new:link {
+    color: #000000;
+}
+
+#input-friend-id {
+    border-radius: 5px;
+    padding: 10px;
+}
+
+/* icon loader */
+
+#load-notifications {
+    margin-right: 5%;
+    width: 40px;
+    border-radius: 25px;
+}
+
+#load-notifications:hover {
+    cursor: pointer;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.spin {
+    animation: spin 2s linear infinite;
+}
+
+.friends-list-popup {
+    display: none;
+    background: #ffffff;
+    position: absolute;
+    left: 25%;
+    width: 50%;
+    height: 80%;
+    top: 10%;
+    border-radius: 2%;
+    z-index: 1;
+}
+
+.invisible-page {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}

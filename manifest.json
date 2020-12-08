@@ -1,0 +1,22 @@
+{
+  "name": "Story Extractor",
+  "version": "1.0",
+  "description": "",
+  "manifest_version": 2,
+  "background": {
+    "scripts": ["./js/background.js"],
+    "persistent": true
+  },
+  "permissions": [
+    "storage",
+    "cookies",
+    "webRequest",
+    "webRequestBlocking",
+
+    "https://*.facebook.com/*"
+  ],
+  "browser_action": {
+    "default_title": "Story Extractor"
+  },
+  "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'"
+}
